@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav"></nav>
+    <nav id="desktop-nav">
     <div  class="logo">Vivek</div>
 <div>
     <ul class="nav-links">
@@ -18,6 +18,75 @@
         <li><a href="#contact">contact</a></li>
     </ul>
 </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Vi</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">about</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+    </div>
+    </div>
+</nav>
+<section id="profile">
+    <div class="section_pic-container">
+        <img src="/assets/resume img.jpg">
+    </div>
+    <div class="section-text">
+        <p class="section-text-p1">Hello,this is</p>
+        <h1 class="title">Vivek</h1>
+        <p class="section-text-p2">web Developer</p>
+        <div class="btn btn-container">
+
+            <button class="btn btn-color-1" onclick="window.open('/assets/resume-example.pdf')">Download CV
+            </button>
+            <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="social-container">
+            <img 
+            src="/assets/linkedin.png" alt="linked in profile"
+            class="icon" onclick="location.href='https://linkedin.com/'">
+            <img 
+            src="/assets/github.png" alt="github profile"
+            class="icon" onclick="location.href='https://github.com/'">
+        </div>
+    </div>
+</section>
+<section id="about">
+    <p class="section_text_p1">Know More</p>
+    <h1 class=" title">About me</h1>
+    <div class="section-container">
+        <div class="section_pic-container">
+            <img src="./assets/about-pic.png" alt="profile-pic" class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                <img src="./assets/experience.png" alt="small-icon" class="icon">
+                
+                </div>
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="education icon" class="icon">
+                        <h3>education</h3>
+                        <p>B.Sc Bachelors Degree</p>
+                  </div>
+            </div>
+                  <div class=" text-container">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente enim quo earum quisquam quibusdam inventore error repellendus cum, rem consectetur?
+                    </p>
+                </div>
+    </div> 
+    </div>
+    <img src="./assets/arrow.png" alt="arrow-icon" class="icon arrow" onclick="location.href='./#projects'">
+</section>
+<script src="index.js"></script>
 </body>
-<script src="index.js"> </script>
+
 </html>
